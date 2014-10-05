@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/bahmutov/ng-node-bdd/issues"
   },
-  "homepage": "https://github.com/bahmutov/ng-node-bdd"
+  "homepage": "https://github.com/bahmutov/ng-node-bdd",
+  "devDependencies": {
+    "benv": "0.1.6"
+  }
 }
