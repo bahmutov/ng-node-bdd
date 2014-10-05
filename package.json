@@ -1,0 +1,28 @@
+{
+  "name": "ng-node-bdd",
+  "version": "0.0.0",
+  "description": "BDD utilities for unit testing Angular under Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bahmutov/ng-node-bdd.git"
+  },
+  "keywords": [
+    "bdd",
+    "unit",
+    "testing",
+    "angular",
+    "angularjs",
+    "node",
+    "nodejs"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/ng-node-bdd/issues"
+  },
+  "homepage": "https://github.com/bahmutov/ng-node-bdd"
+}
