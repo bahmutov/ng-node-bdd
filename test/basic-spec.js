@@ -21,8 +21,9 @@ describe('test value', function () {
     angular.module('foo', []).value('bar', 'baz');
   });
 
-  ngBdd.ngIt('gets value', ['foo'], function (bar) {
+  ngBdd.ngIt('gets value', ['foo'], function (done, bar) {
     console.assert(bar === 'baz');
+    done();
   });
 
 });

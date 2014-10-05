@@ -1,6 +1,6 @@
 {
   "name": "ng-node-bdd",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "BDD utilities for unit testing Angular under Node",
   "main": "index.js",
   "scripts": {

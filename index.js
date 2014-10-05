@@ -7,8 +7,9 @@ function ngIt(name, deps, cb) {
     deps = [deps];
   }
 
-  it(name, function () {
+  it(name, function (done) {
     var m = angular.module('test-module', deps);
+    m.constant('done', done);
     m.run(cb);
     angular.bootstrap(document, ['test-module']);
   });
