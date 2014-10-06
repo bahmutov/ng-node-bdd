@@ -8,10 +8,18 @@ function ngIt(name, deps, cb) {
   }
 
   it(name, function (done) {
+    var testDependencies = angular.injector([]).annotate(cb);
+    var isAsyncTest = testDependencies.indexOf('done') !== -1;
+
     var m = angular.module('test-module', deps);
-    m.constant('done', done);
+    if (isAsyncTest) {
+      m.constant('done', done);
+    }
     m.run(cb);
     angular.bootstrap(document, ['test-module']);
+    if (!isAsyncTest) {
+      done();
+    }
   });
 }
 
